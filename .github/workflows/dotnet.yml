@@ -25,5 +25,6 @@ jobs:
     - name: Build
       run: | 
         dotnet test -l "trx;logfilename=foo.trx"
+        ls
     - name: Test
       run: dotnet test --no-build --verbosity normal
